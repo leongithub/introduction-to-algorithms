@@ -1,7 +1,3 @@
-;; 因为在 lisp 中对整数的支持可以到很大很大
-;; 这里定义一个 Java 中整数最大值 Integer.MAX_VALUE
-(defconstant +max-value+ (1- (expt 2 31)))
-
 ;; p, r 为数组下标
 (defun merge-sort (array p r)
   (when (< p r)
@@ -21,8 +17,8 @@
     (loop for j below n2
        do (setf (aref right j)
 		(aref array (+ q j 1))))
-    (setf (aref left n1) +max-value+)
-    (setf (aref right n2) +max-value+)
+    (setf (aref left n1) most-positive-fixnum)
+    (setf (aref right n2) most-positive-fixnum)
     (let ((i 0)
 	  (j 0))
       (loop for k from p to r
