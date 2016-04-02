@@ -1,3 +1,5 @@
+;;;; 插入排序 O(n * n)
+
 (defun insertion-sort (array)
   (do ((j 1 (1+ j))
        (key)

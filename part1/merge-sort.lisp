@@ -1,3 +1,5 @@
+;;;; 合并排序 O(n * lgn)
+
 ;; p, r 为数组下标
 (defun merge-sort (array p r)
   (when (< p r)

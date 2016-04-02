@@ -1,5 +1,5 @@
 /**
- * 插入排序
+ * 插入排序 O(n * n)
  */
 public class InsertionSort {
 

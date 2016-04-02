@@ -1,5 +1,5 @@
 /**
- * 合并排序
+ * 合并排序 O(n * lgn)
  */
 public class MergeSort {
 
